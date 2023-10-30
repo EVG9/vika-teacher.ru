@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,6 +25,10 @@ h1 {
 
 p {
     font-size: 1.5em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
 div {
@@ -60,9 +64,20 @@ img {
 
 nav, footer {
     background-color: rgb(230, 230, 250, 0.7);
-}
+} 
       
-      h4 {
+      .prize {
+        background-color: rgb(230, 230, 250, 0.7);
+        text-align: center;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #878686;
+      }
+      
+h4 {
         color: gray;
       }
 
@@ -151,12 +166,13 @@ nav, footer {
 <p>Мой любимый видео клип...</p>
 
 <!-- <button>Проверить уровень английского языка</button> (в разработке)<br><br> -->
-
-<p>Чтобы испытать удачу, нажмите</p>
+<div class="prize">
+<p>Чтобы испытать удачу, нажмите:</p>
 <button onclick="result()">Запуск</button>
-<br><br>
-<span class="phrase">Ваш приз: </span>
-
+<br>
+<p class="phrase">Ваш приз: </p>
+</div>
+  
 <p><b>Более подробная информация о Виктории Жулебино:</b></p>
 <iframe id="about" width=100% height="350" src="https://my-calend.ru/names/viktoriya"></iframe>
 <hr>
